@@ -1,0 +1,128 @@
+.ast-container {
+  max-width: unset;
+  padding: 0;
+}
+.ast-container main#site-content {
+  width: 100%;
+}
+
+#main > article {
+  width: 100vw;
+  min-height: 75vh;
+}
+
+.site-header-primary-section-left.site-header-section {
+  margin-left: auto;
+}
+
+.ast-primary-header-bar a {
+  border: none;
+  text-decoration: none;
+}
+
+span.icon.shanticon-magnify {
+  margin-left: -2rem;
+  color: lightgrey;
+}
+
+#main-search-tree-toggle, #advanced-search-tree-toggle {
+  max-height: 40px;
+}
+#main-search-tree-toggle .icon, #advanced-search-tree-toggle .icon {
+  font-size: 2.2rem;
+}
+#main-search-tree-toggle svg, #advanced-search-tree-toggle svg {
+  font-size: 2rem;
+  top: 0;
+}
+
+aside.l-column__search header.treeNav-header {
+  height: 4.2rem;
+}
+
+.ast-mobile-header-wrap .ast-below-header-bar,
+.ast-below-header-bar .site-below-header-wrap {
+  min-height: 40px;
+  max-height: 40px;
+}
+
+.ast-below-header-bar {
+  background-color: #5a86ab;
+}
+.ast-below-header-bar .site-header-section {
+  margin-left: auto;
+}
+.ast-below-header-bar .ast-nav-menu li {
+  min-width: 175px;
+  max-height: 40px;
+}
+.ast-below-header-bar .ast-nav-menu li a {
+  font-weight: bold;
+  border-bottom: none;
+  font-size: 1.6rem;
+  color: #FEFEFE;
+}
+.ast-below-header-bar .ast-nav-menu li .sub-menu a {
+  color: #333333;
+}
+
+.ast-separate-container #primary {
+  margin-top: 0 !important;
+}
+
+.ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single {
+  padding: 1rem 2rem;
+}
+
+.teaser-columns:first-child .thl-teaser {
+  margin-left: auto;
+}
+
+.page .entry-header, .page .entry-content {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.wp-block-group.thl-teaser {
+  border: 4px double #777;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  padding: 0 !important;
+  height: 400px;
+  max-width: 400px;
+}
+.wp-block-group.thl-teaser .wp-block-group__inner-container .wp-block-image {
+  margin-bottom: 0;
+}
+.wp-block-group.thl-teaser .wp-block-group__inner-container .wp-block-image img {
+  width: 100%;
+  border-top-right-radius: 17px;
+  border-top-left-radius: 17px;
+}
+.wp-block-group.thl-teaser .wp-block-group__inner-container h2.has-text-align-center {
+  background-color: #5a86ab;
+  margin-bottom: 0;
+}
+.wp-block-group.thl-teaser .wp-block-group__inner-container h2.has-text-align-center a {
+  color: white;
+  border-bottom: none;
+  text-decoration: none;
+}
+.wp-block-group.thl-teaser .wp-block-group__inner-container p {
+  padding: 0.5rem;
+  padding-left: 0.75rem;
+}
+
+.blog article {
+  width: 100vw;
+}
+.blog article .post-content {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog article .post-content .entry-content p {
+  font-size: 1.65rem;
+}
+
+/*# sourceMappingURL=mandala-astra.css.map */
