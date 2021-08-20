@@ -17,7 +17,9 @@ $menubar-height: 40px;
 
 // Header
 .site-header-primary-section-left.site-header-section {
-  margin-left: auto;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
 }
 
 .ast-primary-header-bar {
@@ -65,6 +67,8 @@ aside.l-column__search header.treeNav-header {
   .ast-nav-menu li {
     min-width: 175px;
     max-height: $menubar-height;
+    text-align: center;
+
 
     a {
       font-weight: bold;
@@ -73,11 +77,19 @@ aside.l-column__search header.treeNav-header {
       color: #FEFEFE;
     }
 
-    .sub-menu a {
-      color: #333333;
+    .sub-menu {
+      background-color: #fff;
+      a {
+        color: #333333;
+      }
+      li.current-menu-item {
+        background-color: #ddd;
+      }
     }
+
   }
 }
+
 
 // Main Content
 .ast-separate-container #primary {

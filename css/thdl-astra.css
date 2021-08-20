@@ -12,7 +12,9 @@
 }
 
 .site-header-primary-section-left.site-header-section {
-  margin-left: auto;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
 }
 
 .ast-primary-header-bar a {
@@ -55,6 +57,7 @@ aside.l-column__search header.treeNav-header {
 .ast-below-header-bar .ast-nav-menu li {
   min-width: 175px;
   max-height: 40px;
+  text-align: center;
 }
 .ast-below-header-bar .ast-nav-menu li a {
   font-weight: bold;
@@ -62,8 +65,14 @@ aside.l-column__search header.treeNav-header {
   font-size: 1.6rem;
   color: #FEFEFE;
 }
+.ast-below-header-bar .ast-nav-menu li .sub-menu {
+  background-color: #fff;
+}
 .ast-below-header-bar .ast-nav-menu li .sub-menu a {
   color: #333333;
+}
+.ast-below-header-bar .ast-nav-menu li .sub-menu li.current-menu-item {
+  background-color: #ddd;
 }
 
 .ast-separate-container #primary {
@@ -125,4 +134,4 @@ aside.l-column__search header.treeNav-header {
   font-size: 1.65rem;
 }
 
-/*# sourceMappingURL=mandala-astra.css.map */
+/*# sourceMappingURL=thdl-astra.css.map */

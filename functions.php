@@ -19,7 +19,7 @@ define( 'CHILD_THEME_MANDALA_ASTRA_VERSION', '1.0.0' );
 function child_enqueue_styles() {
 
 	wp_enqueue_style( 'mandala-astra-theme-css', get_stylesheet_directory_uri() . '/style.css', array('astra-theme-css'), CHILD_THEME_MANDALA_ASTRA_VERSION, 'all' );
-	wp_enqueue_style ('mandala-astra-child-css', get_stylesheet_directory_uri() .'/css/mandala-astra.css', array());
+	wp_enqueue_style ('mandala-astra-child-css', get_stylesheet_directory_uri() .'/css/thdl-astra.css', array());
 
 }
 
