@@ -121,7 +121,7 @@ body.home:not(.mandala) #content article.page h2, body.home:not(.mandala) #conte
   padding: 0;
 }
 body.home:not(.mandala) #content article.page h2 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-famimly: "Clarkson", Helvetica, sans-serif;
   font-weight: bold;
   margin-bottom: 1.5rem;
