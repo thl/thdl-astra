@@ -32,3 +32,11 @@ function thdl_custom_js() {
 }
 
 add_action( 'wp_enqueue_scripts', 'thdl_custom_js', 15 );
+
+/*
+function thdl_test() {
+	$tp = get_page_template();
+}
+
+add_action( 'astra_primary_content_top', 'thdl_test');
+*/
