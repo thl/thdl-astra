@@ -27,7 +27,6 @@ add_action( 'wp_enqueue_scripts', 'thdl_custom_styles', 15 );
 /**
  * Enqueue styles
  */
-
 function thdl_custom_js() {
 	wp_enqueue_script( 'thdl_custom_js', get_stylesheet_directory_uri() . '/js/thdl-astra.js', array('jquery'), '1.0', true );
 }

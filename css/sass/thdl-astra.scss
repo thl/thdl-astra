@@ -22,6 +22,12 @@ $almost-white: #fdfdfd;
   }
 }
 
+// Columns
+.wp-block-column {
+  &.left-main { flex-basis: 75%;}
+  &.right-side { flex-basis: 25%;}
+}
+
 // Content General
 .page .entry-header, .page .entry-content {
   margin: 0 auto;
@@ -117,8 +123,62 @@ aside.l-column__search header.treeNav-header {
   }
 }
 
+// Menu closing fix. See thdl-astra.js menu_fix function
+.menu-item.menu-item-type-custom.clicked .sub-menu {
+  display: none;
+}
+
 // Homepage
 
+
+body.home header.entry-header {
+  display: none;
+}
+
+body.home:not(.mandala) {
+
+  #content article.page {
+    background-color: #354f6480;
+    color: $almost-white;
+    font-size: 1.25rem;
+
+    .wp-block-column.left-main .wp-block-group__inner-container {
+      max-width: 750px;
+      margin: 0 auto;
+      text-align: center;
+
+      .text-block {
+        margin-top: 3rem;
+      }
+      .home-slider {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+
+
+    h1, h5 {
+      color: $almost-white;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+      font-famimly: 'Clarkson',Helvetica,sans-serif;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    h5 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+
+  }
+}
+/*
 body.home header.entry-header {
   display: none;
 }
@@ -165,11 +225,6 @@ body.home:not(.mandala) {
       .metaslider {
         max-width: 600px;
         margin: auto 0;
-        /*
-        background-image: url(http://thdl.shanti.a2hosted.com/wp-content/uploads/2021/09/border-sample_shanti-image-465411-4.png);
-        padding: 50px 50px 2px 50px;
-        background-size: 600px;
-         */
       }
       .metaslider .caption {
         font-famimly: 'Clarkson',Helvetica,sans-serif;
@@ -177,8 +232,9 @@ body.home:not(.mandala) {
         text-align: center;
       }
     }
-  } /* end homepage article.page */
-} /* end body.home */
+  }
+}
+*/
 
 // Sidebar
 .l-content__rightsidebar {

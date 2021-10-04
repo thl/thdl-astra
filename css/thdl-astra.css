@@ -17,6 +17,13 @@
   padding: 0;
 }
 
+.wp-block-column.left-main {
+  flex-basis: 75%;
+}
+.wp-block-column.right-side {
+  flex-basis: 25%;
+}
+
 .page .entry-header, .page .entry-content {
   margin: 0 auto;
   max-width: 1900px;
@@ -99,28 +106,37 @@ aside.l-column__search header.treeNav-header {
   background-color: #ddd;
 }
 
+.menu-item.menu-item-type-custom.clicked .sub-menu {
+  display: none;
+}
+
 body.home header.entry-header {
   display: none;
 }
 
-body.home:not(.mandala) {
-  /* end homepage article.page */
-}
 body.home:not(.mandala) #content article.page {
   background-color: #354f6480;
   color: #fdfdfd;
   font-size: 1.25rem;
 }
-body.home:not(.mandala) #content article.page .wp-block-columns.colgroup {
-  max-width: 1500px;
+body.home:not(.mandala) #content article.page .wp-block-column.left-main .wp-block-group__inner-container {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+body.home:not(.mandala) #content article.page .wp-block-column.left-main .wp-block-group__inner-container .text-block {
+  margin-top: 3rem;
+}
+body.home:not(.mandala) #content article.page .wp-block-column.left-main .wp-block-group__inner-container .home-slider {
+  max-width: 600px;
   margin: 0 auto;
 }
-body.home:not(.mandala) #content article.page h2, body.home:not(.mandala) #content article.page h5 {
+body.home:not(.mandala) #content article.page h1, body.home:not(.mandala) #content article.page h5 {
   color: #fdfdfd;
   margin: 0;
   padding: 0;
 }
-body.home:not(.mandala) #content article.page h2 {
+body.home:not(.mandala) #content article.page h1 {
   font-size: 4.5rem;
   font-famimly: "Clarkson", Helvetica, sans-serif;
   font-weight: bold;
@@ -132,30 +148,64 @@ body.home:not(.mandala) #content article.page h5 {
 body.home:not(.mandala) #content article.page p {
   font-size: 2rem;
 }
-body.home:not(.mandala) #content article.page div.text-block.desc {
-  width: 40vw;
-  max-width: 700px;
-  margin: 10vh auto 0;
-}
-body.home:not(.mandala) #content article.page div.slideshow {
-  margin: 10vh auto 0;
-}
-body.home:not(.mandala) #content article.page div.slideshow .metaslider {
-  max-width: 600px;
-  margin: auto 0;
-  /*
-  background-image: url(http://thdl.shanti.a2hosted.com/wp-content/uploads/2021/09/border-sample_shanti-image-465411-4.png);
-  padding: 50px 50px 2px 50px;
-  background-size: 600px;
-   */
-}
-body.home:not(.mandala) #content article.page div.slideshow .metaslider .caption {
-  font-famimly: "Clarkson", Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: center;
+
+/*
+body.home header.entry-header {
+  display: none;
 }
 
-/* end body.home */
+body.home:not(.mandala) {
+  #content article.page {
+    background-color: #354f6480;
+    color: $almost-white;
+    font-size: 1.25rem;
+
+
+    .wp-block-columns.colgroup {
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    h2, h5 {
+      color: $almost-white;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 4.5rem;
+      font-famimly: 'Clarkson',Helvetica,sans-serif;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    h5 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+
+    div.text-block.desc {
+      width: 40vw;
+      max-width: 700px;
+      margin: 10vh auto 0;
+    }
+
+    div.slideshow {
+      margin:10vh auto 0;
+      .metaslider {
+        max-width: 600px;
+        margin: auto 0;
+      }
+      .metaslider .caption {
+        font-famimly: 'Clarkson',Helvetica,sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}
+*/
 .l-content__rightsidebar .l-column__search a {
   text-decoration: none;
   border: none;
