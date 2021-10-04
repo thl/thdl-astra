@@ -1,19 +1,38 @@
 $menubar-color: #5a86ab;
 $menubar-height: 40px;
+$almost-white: #fdfdfd;
 
 // Container full width
 .ast-container {
   max-width: unset;
   padding:0;
-  main#site-content {
+  #site-content {
     width: 100%;
+  }
+  #primary {
+    margin-bottom: 0 !important;
+  }
+  #main {
+    margin-top: -0.5rem;
+    & > article {
+      width: 100vw;
+      min-height: 75vh;
+      padding: 0;
+    }
   }
 }
 
-#main > article {
+// Content General
+.page .entry-header, .page .entry-content {
+  margin: 0 auto;
+  max-width: 1900px;
   width: 100vw;
-  min-height: 75vh;
-}
+
+  a {
+    text-decoration: none;
+    border: none;
+  }
+} // end of page .entry...
 
 // Header
 .site-header-primary-section-left.site-header-section {
@@ -44,6 +63,14 @@ span.icon.shanticon-magnify {
     font-size: 2.0rem;
     top: 0;
   }
+}
+
+#browseSearchPortal .adv-settings-btn {
+  background-color: transparent;
+  color: #333;
+  font-size: 1.75rem;
+  border: none;
+  text-decoration: none;
 }
 
 aside.l-column__search header.treeNav-header {
@@ -90,6 +117,92 @@ aside.l-column__search header.treeNav-header {
   }
 }
 
+// Homepage
+
+body.home header.entry-header {
+  display: none;
+}
+
+body.home:not(.mandala) {
+  #content article.page {
+    background-color: #354f6480;
+    color: $almost-white;
+    font-size: 1.25rem;
+
+
+    .wp-block-columns.colgroup {
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    h2, h5 {
+      color: $almost-white;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 5rem;
+      font-famimly: 'Clarkson',Helvetica,sans-serif;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    h5 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+
+    div.text-block.desc {
+      width: 40vw;
+      max-width: 700px;
+      margin: 10vh auto 0;
+    }
+
+    div.slideshow {
+      margin:10vh auto 0;
+      .metaslider {
+        max-width: 600px;
+        margin: auto 0;
+        /*
+        background-image: url(http://thdl.shanti.a2hosted.com/wp-content/uploads/2021/09/border-sample_shanti-image-465411-4.png);
+        padding: 50px 50px 2px 50px;
+        background-size: 600px;
+         */
+      }
+      .metaslider .caption {
+        font-famimly: 'Clarkson',Helvetica,sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  } /* end homepage article.page */
+} /* end body.home */
+
+// Sidebar
+.l-content__rightsidebar {
+  .l-column__search {
+    a {
+      text-decoration: none;
+      border: none;
+    }
+    .header-label-count a {
+      color: white;
+      margin-top: 3px;
+      display: inline-block;
+    }
+  }
+}
+
+// Mandala Pages
+body.mandala .site-content .ast-container {
+  display: unset;
+}
+
+body.mandala div#mandala-root + div {
+  display: none;
+}
 
 // Main Content
 .ast-separate-container #primary {
@@ -102,11 +215,6 @@ aside.l-column__search header.treeNav-header {
 
 .teaser-columns:first-child .thl-teaser {
   margin-left: auto;
-}
-
-.page .entry-header, .page .entry-content {
-  margin: 0 auto;
-  max-width: 900px;
 }
 
 // THL Teasers
@@ -160,4 +268,9 @@ aside.l-column__search header.treeNav-header {
     }
   }
 
+}
+
+// General Text Styles
+.bo {
+  text-decoration: none;
 }

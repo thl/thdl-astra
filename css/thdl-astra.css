@@ -2,13 +2,29 @@
   max-width: unset;
   padding: 0;
 }
-.ast-container main#site-content {
+.ast-container #site-content {
   width: 100%;
 }
-
-#main > article {
+.ast-container #primary {
+  margin-bottom: 0 !important;
+}
+.ast-container #main {
+  margin-top: -0.5rem;
+}
+.ast-container #main > article {
   width: 100vw;
   min-height: 75vh;
+  padding: 0;
+}
+
+.page .entry-header, .page .entry-content {
+  margin: 0 auto;
+  max-width: 1900px;
+  width: 100vw;
+}
+.page .entry-header a, .page .entry-content a {
+  text-decoration: none;
+  border: none;
 }
 
 .site-header-primary-section-left.site-header-section {
@@ -36,6 +52,14 @@ span.icon.shanticon-magnify {
 #main-search-tree-toggle svg, #advanced-search-tree-toggle svg {
   font-size: 2rem;
   top: 0;
+}
+
+#browseSearchPortal .adv-settings-btn {
+  background-color: transparent;
+  color: #333;
+  font-size: 1.75rem;
+  border: none;
+  text-decoration: none;
 }
 
 aside.l-column__search header.treeNav-header {
@@ -75,6 +99,81 @@ aside.l-column__search header.treeNav-header {
   background-color: #ddd;
 }
 
+body.home header.entry-header {
+  display: none;
+}
+
+body.home:not(.mandala) {
+  /* end homepage article.page */
+}
+body.home:not(.mandala) #content article.page {
+  background-color: #354f6480;
+  color: #fdfdfd;
+  font-size: 1.25rem;
+}
+body.home:not(.mandala) #content article.page .wp-block-columns.colgroup {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+body.home:not(.mandala) #content article.page h2, body.home:not(.mandala) #content article.page h5 {
+  color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+}
+body.home:not(.mandala) #content article.page h2 {
+  font-size: 5rem;
+  font-famimly: "Clarkson", Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+body.home:not(.mandala) #content article.page h5 {
+  font-size: 2.5rem;
+}
+body.home:not(.mandala) #content article.page p {
+  font-size: 2rem;
+}
+body.home:not(.mandala) #content article.page div.text-block.desc {
+  width: 40vw;
+  max-width: 700px;
+  margin: 10vh auto 0;
+}
+body.home:not(.mandala) #content article.page div.slideshow {
+  margin: 10vh auto 0;
+}
+body.home:not(.mandala) #content article.page div.slideshow .metaslider {
+  max-width: 600px;
+  margin: auto 0;
+  /*
+  background-image: url(http://thdl.shanti.a2hosted.com/wp-content/uploads/2021/09/border-sample_shanti-image-465411-4.png);
+  padding: 50px 50px 2px 50px;
+  background-size: 600px;
+   */
+}
+body.home:not(.mandala) #content article.page div.slideshow .metaslider .caption {
+  font-famimly: "Clarkson", Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* end body.home */
+.l-content__rightsidebar .l-column__search a {
+  text-decoration: none;
+  border: none;
+}
+.l-content__rightsidebar .l-column__search .header-label-count a {
+  color: white;
+  margin-top: 3px;
+  display: inline-block;
+}
+
+body.mandala .site-content .ast-container {
+  display: unset;
+}
+
+body.mandala div#mandala-root + div {
+  display: none;
+}
+
 .ast-separate-container #primary {
   margin-top: 0 !important;
 }
@@ -85,11 +184,6 @@ aside.l-column__search header.treeNav-header {
 
 .teaser-columns:first-child .thl-teaser {
   margin-left: auto;
-}
-
-.page .entry-header, .page .entry-content {
-  margin: 0 auto;
-  max-width: 900px;
 }
 
 .wp-block-group.thl-teaser {
@@ -132,6 +226,10 @@ aside.l-column__search header.treeNav-header {
 }
 .blog article .post-content .entry-content p {
   font-size: 1.65rem;
+}
+
+.bo {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=thdl-astra.css.map */
