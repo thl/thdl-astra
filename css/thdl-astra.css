@@ -143,11 +143,11 @@ body.home:not(.mandala) #content article.page h1 {
   margin-bottom: 1.5rem;
 }
 body.home:not(.mandala) #content article.page h5 {
-  color: #fdfdfdb5;
+  color: #fdfdfd;
   font-size: 2.5rem;
+  opacity: 0.85;
 }
 body.home:not(.mandala) #content article.page p {
-  color: #fdfdfdb5;
   font-size: 2rem;
 }
 
