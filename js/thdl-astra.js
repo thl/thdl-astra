@@ -3,6 +3,7 @@
     $(document).ready(() => {
         thdl_menu_fix();
         thdl_move_page_header();
+        thdl_position_mandala_root();
     })
 
     function thdl_menu_fix() {
@@ -21,6 +22,14 @@
         if (maincol.length == 1 && head.length == 1) {
             console.log('moving head');
             $('#mandala-root').after(head);
+        }
+    }
+
+    function thdl_position_mandala_root() {
+        const mroot = $('#mandala-root');
+        const leftside = $('.wp-block-column.left-main');
+        if (mroot.length === 1 && leftside.length === 1) {
+            mroot.prependTo(leftside);
         }
     }
 })(jQuery);
