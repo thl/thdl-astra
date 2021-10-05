@@ -19,6 +19,7 @@
 
 .wp-block-column.left-main {
   flex-basis: 75%;
+  padding: 1.5rem 2.5rem;
 }
 .wp-block-column.right-side {
   flex-basis: 25%;
@@ -222,7 +223,14 @@ body.blog .entry-content p {
   font-size: 1.65rem;
 }
 body.blog .wp-block-columns .wp-block-group {
-  padding-top: 0;
+  padding: 0;
+}
+body.blog .left-main article.post {
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 1rem;
+}
+body.blog .right-side {
+  margin-left: 0;
 }
 
 .bo {
