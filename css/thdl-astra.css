@@ -239,18 +239,18 @@ body.blog .right-side {
   margin-left: 0;
 }
 
-body.feature-page .wp-block-column.left-main {
+body.feature-page:not(.mandala) .wp-block-column.left-main {
   background-color: #354f6480;
   padding: 5% 10% 0;
   color: #fdfdfd;
   font-size: 1.55rem;
 }
-body.feature-page .wp-block-column.left-main header.entry-header h1 {
+body.feature-page:not(.mandala) .wp-block-column.left-main header.entry-header h1 {
   color: #fdfdfd;
   font-weight: bold;
   font-size: 2.25rem;
 }
-body.feature-page .wp-block-column.left-main figure figcaption {
+body.feature-page:not(.mandala) .wp-block-column.left-main figure figcaption {
   text-align: center;
 }
 

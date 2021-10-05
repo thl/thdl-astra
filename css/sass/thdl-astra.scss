@@ -290,7 +290,7 @@ body.blog {
 }
 
 // Feature pages
-body.feature-page {
+body.feature-page:not(.mandala) {
   .wp-block-column.left-main {
     background-color: #354f6480;
     padding: 5% 10% 0;
