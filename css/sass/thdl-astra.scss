@@ -38,7 +38,7 @@ $almost-white: #fdfdfd;
 .page .entry-header, .page .entry-content {
   margin: 0 auto;
   max-width: 1900px;
-  width: 100vw;
+  // width: 100vw;
 
   a {
     text-decoration: none;
@@ -221,6 +221,7 @@ body.mandala div#mandala-root + div {
   padding: 1rem 2rem;
 }
 
+/*
 .teaser-columns:first-child .thl-teaser {
   margin-left: auto;
 }
@@ -260,6 +261,7 @@ body.mandala div#mandala-root + div {
     }
   }
 }
+*/
 
 // Blog Styles
 body.blog {
@@ -287,6 +289,25 @@ body.blog {
   }
 }
 
+// Feature pages
+body.feature-page {
+  .wp-block-column.left-main {
+    background-color: #354f6480;
+    padding: 5% 10% 0;
+    color: $almost-white;
+    font-size: 1.55rem;
+
+    header.entry-header h1 {
+      color: $almost-white;
+      font-weight: bold;
+      font-size:2.25rem;
+      //text-align: center;
+    }
+    figure figcaption {
+      text-align: center;
+    }
+  }
+}
 
 // General Text Styles
 .bo {

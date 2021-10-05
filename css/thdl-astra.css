@@ -29,7 +29,6 @@
 .page .entry-header, .page .entry-content {
   margin: 0 auto;
   max-width: 1900px;
-  width: 100vw;
 }
 .page .entry-header a, .page .entry-content a {
   text-decoration: none;
@@ -179,10 +178,12 @@ body.mandala div#mandala-root + div {
   padding: 1rem 2rem;
 }
 
+/*
 .teaser-columns:first-child .thl-teaser {
   margin-left: auto;
 }
 
+// THL Teasers
 .wp-block-group.thl-teaser {
   border: 4px double #777;
   margin-bottom: 2rem;
@@ -190,29 +191,34 @@ body.mandala div#mandala-root + div {
   padding: 0 !important;
   height: 400px;
   max-width: 400px;
-}
-.wp-block-group.thl-teaser .wp-block-group__inner-container .wp-block-image {
-  margin-bottom: 0;
-}
-.wp-block-group.thl-teaser .wp-block-group__inner-container .wp-block-image img {
-  width: 100%;
-  border-top-right-radius: 17px;
-  border-top-left-radius: 17px;
-}
-.wp-block-group.thl-teaser .wp-block-group__inner-container h2.has-text-align-center {
-  background-color: #5a86ab;
-  margin-bottom: 0;
-}
-.wp-block-group.thl-teaser .wp-block-group__inner-container h2.has-text-align-center a {
-  color: white;
-  border-bottom: none;
-  text-decoration: none;
-}
-.wp-block-group.thl-teaser .wp-block-group__inner-container p {
-  padding: 0.5rem;
-  padding-left: 0.75rem;
-}
 
+
+  .wp-block-group__inner-container {
+    .wp-block-image {
+      margin-bottom: 0;
+    }
+    .wp-block-image img {
+      width: 100%;
+      border-top-right-radius: 17px;
+      border-top-left-radius: 17px;
+    }
+
+    h2.has-text-align-center {
+      background-color: $menubar-color;
+      margin-bottom: 0;
+      a {
+        color: white;
+        border-bottom: none;
+        text-decoration: none;
+      }
+    }
+    p {
+      padding: 0.5rem;
+      padding-left: 0.75rem;
+    }
+  }
+}
+*/
 body.blog #primary {
   width: 100%;
 }
@@ -231,6 +237,21 @@ body.blog .left-main article.post {
 }
 body.blog .right-side {
   margin-left: 0;
+}
+
+body.feature-page .wp-block-column.left-main {
+  background-color: #354f6480;
+  padding: 5% 10% 0;
+  color: #fdfdfd;
+  font-size: 1.55rem;
+}
+body.feature-page .wp-block-column.left-main header.entry-header h1 {
+  color: #fdfdfd;
+  font-weight: bold;
+  font-size: 2.25rem;
+}
+body.feature-page .wp-block-column.left-main figure figcaption {
+  text-align: center;
 }
 
 .bo {
