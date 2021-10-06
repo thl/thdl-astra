@@ -20,7 +20,6 @@
         const maincol = $(".wp-block-columns .left-main");
         const head = $('#content #primary > #main > article header.entry-header');
         if (maincol.length == 1 && head.length == 1) {
-            console.log('moving head');
             $('#mandala-root').after(head);
         }
     }

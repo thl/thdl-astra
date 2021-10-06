@@ -253,6 +253,12 @@ body.feature-page:not(.mandala) .wp-block-column.left-main figure figcaption {
   text-align: center;
 }
 
+div#text-alt-viewer {
+  padding-top: 3.15rem;
+  padding-right: 2rem;
+  margin-left: -3rem;
+}
+
 .bo {
   text-decoration: none;
 }
