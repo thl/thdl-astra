@@ -208,7 +208,7 @@ body.mandala .site-content .ast-container {
   display: unset;
 }
 
-body.mandala div#mandala-root + div {
+body.mandala div#mandala-root ~ div {
   display: none;
 }
 
