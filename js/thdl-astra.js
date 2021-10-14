@@ -8,13 +8,15 @@
 
     function thdl_menu_fix() {
         $('.sub-menu .menu-link').on('click', function(e) {
-            $('.current-menu-item').removeClass('current-menu-item');
+            console.log("click", e);
             let parent_menu = $(this).parents('.sub-menu').eq(0).parent();
-            parent_menu.addClass('clicked current-menu-item');
+            parent_menu.addClass('clicked');
             setTimeout(() => {
                 $('.menu-item.clicked').removeClass('clicked');
+                $('.current-menu-item').removeClass('current-menu-item');
+                parent_menu.addClass('current-menu-item');
             }, 100);
-        })
+        });
     }
 
     function thdl_move_page_header() {
