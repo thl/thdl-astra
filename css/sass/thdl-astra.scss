@@ -22,6 +22,11 @@ $almost-white: #fdfdfd;
   }
 }
 
+// Hide Secondary Flex Column
+#secondary {
+  display: none;
+}
+
 // Columns
 .wp-block-column {
   &.left-main {
@@ -50,6 +55,14 @@ $almost-white: #fdfdfd;
   .article .wp-block-columns {
     max-width: 1900px;
     margin: 0 auto;
+  }
+
+  .blog {
+    .wp-block-columns {
+      width: 1900px;
+      max-width: 1900px;
+      margin: 0 auto;
+    }
   }
 }
 

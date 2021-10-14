@@ -17,6 +17,10 @@
   padding: 0;
 }
 
+#secondary {
+  display: none;
+}
+
 .wp-block-column.left-main {
   flex-basis: 75%;
   padding: 1.5rem 2.5rem;
@@ -38,6 +42,12 @@
   }
 
   .article .wp-block-columns {
+    max-width: 1900px;
+    margin: 0 auto;
+  }
+
+  .blog .wp-block-columns {
+    width: 1900px;
     max-width: 1900px;
     margin: 0 auto;
   }

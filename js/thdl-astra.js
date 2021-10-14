@@ -7,14 +7,15 @@
     })
 
     function thdl_menu_fix() {
+        // Resolve two selected menu items
+
+        // Close drop down menus on click and select parent
         $('.sub-menu .menu-link').on('click', function(e) {
-            console.log("click", e);
             let parent_menu = $(this).parents('.sub-menu').eq(0).parent();
-            parent_menu.addClass('clicked');
+            $('.current-menu-item').removeClass('current-menu-item');
+            parent_menu.addClass('clicked current-menu-item');
             setTimeout(() => {
                 $('.menu-item.clicked').removeClass('clicked');
-                $('.current-menu-item').removeClass('current-menu-item');
-                parent_menu.addClass('current-menu-item');
             }, 100);
         });
     }
