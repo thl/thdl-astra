@@ -26,12 +26,32 @@
   padding-top: 5rem;
 }
 
+@media (min-width: 1900px) {
+  .ast-main-header-wrap.main-header-bar-wrap {
+    width: 1900px;
+    margin: 0 auto;
+  }
+
+  .site-header-primary-section-left.site-header-section {
+    width: 1900px;
+    max-width: 1900px;
+  }
+
+  .article .wp-block-columns {
+    max-width: 1900px;
+    margin: 0 auto;
+  }
+}
 .page .entry-header, .page .entry-content {
   margin: 0 auto;
   max-width: 1900px;
 }
 .page .entry-header a, .page .entry-content a {
   text-decoration: none;
+}
+
+#ast-desktop-header {
+  background-color: white;
 }
 
 .site-header-primary-section-left.site-header-section {
@@ -71,6 +91,13 @@ span.icon.shanticon-magnify {
 
 aside.l-column__search header.treeNav-header {
   height: 4.2rem;
+}
+
+#site-navigation .main-navigation .current-menu-item {
+  background-color: #fdfdfd;
+}
+#site-navigation .main-navigation .current-menu-item a {
+  color: #5a86ab;
 }
 
 .ast-mobile-header-wrap .ast-below-header-bar,

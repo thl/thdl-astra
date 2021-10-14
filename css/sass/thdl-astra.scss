@@ -34,6 +34,25 @@ $almost-white: #fdfdfd;
   }
 }
 
+// Large Monitor
+@media (min-width: 1900px) {
+
+  .ast-main-header-wrap.main-header-bar-wrap {
+    width: 1900px;
+    margin: 0 auto;
+  }
+
+  .site-header-primary-section-left.site-header-section {
+    width:1900px;
+    max-width: 1900px;
+  }
+
+  .article .wp-block-columns {
+    max-width: 1900px;
+    margin: 0 auto;
+  }
+}
+
 // Content General
 .page .entry-header, .page .entry-content {
   margin: 0 auto;
@@ -46,6 +65,10 @@ $almost-white: #fdfdfd;
 } // end of page .entry...
 
 // Header
+#ast-desktop-header {
+  background-color: white;
+}
+
 .site-header-primary-section-left.site-header-section {
   display: flex;
   width: 100vw;
@@ -89,6 +112,15 @@ aside.l-column__search header.treeNav-header {
 }
 
 // Nav menu (below header bar)
+#site-navigation .main-navigation {
+  .current-menu-item {
+    background-color: $almost-white;
+    a {
+      color: $menubar-color;
+    }
+  }
+}
+
 .ast-mobile-header-wrap .ast-below-header-bar,
 .ast-below-header-bar .site-below-header-wrap {
   min-height: $menubar-height;

@@ -8,7 +8,9 @@
 
     function thdl_menu_fix() {
         $('.sub-menu .menu-link').on('click', function(e) {
-            $(this).parents('.sub-menu').eq(0).parent().addClass('clicked');
+            $('.current-menu-item').removeClass('current-menu-item');
+            let parent_menu = $(this).parents('.sub-menu').eq(0).parent();
+            parent_menu.addClass('clicked current-menu-item');
             setTimeout(() => {
                 $('.menu-item.clicked').removeClass('clicked');
             }, 100);
