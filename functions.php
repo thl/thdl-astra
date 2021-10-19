@@ -14,6 +14,23 @@
 define( 'CHILD_THEME_MANDALA_ASTRA_VERSION', '1.0.0' );
 
 /**
+ * Enable Wordpress Email
+ *      Taken from: https://www.a2hosting.com/kb/installable-applications/optimization-and-configuration/wordpress2/sending-e-mail-in-wordpress
+ */
+add_action( 'phpmailer_init', 'send_smtp_email' );
+function send_smtp_email( $phpmailer ) {
+	$phpmailer->isSMTP();
+	$phpmailer->Host       = SMTP_HOST;
+	$phpmailer->SMTPAuth   = SMTP_AUTH;
+	$phpmailer->Port       = SMTP_PORT;
+	$phpmailer->SMTPSecure = SMTP_SECURE;
+	$phpmailer->Username   = SMTP_USERNAME;
+	$phpmailer->Password   = SMTP_PASSWORD;
+	$phpmailer->From       = SMTP_FROM;
+	$phpmailer->FromName   = SMTP_FROMNAME;
+}
+
+/**
  * Enqueue styles
  */
 function thdl_custom_styles() {
