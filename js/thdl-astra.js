@@ -19,19 +19,24 @@
             }, 100);
         });
 
-        window.onhashchange = function(e) {
-            const bctext = $('.c-content__header__breadcrumb .breadcrumb-item').eq(0).text().toLowerCase();
-            console.log("First bc text: ", bctext);
-            $('.menu-link').each((ml) => {
-                const mltxt = ml.text();
-                console.log("Menu link", mltxt);
-                if (mltxt === bctext) {
-                    $('.current-menu-item').removeClass('current-menu-item')
-                    ml.addClass('current-menu-item');
-                    console.log("set as current");
-                }
-            });
+        const updateMenu =  function(e) {
+            setTimeout(() => {
+                const bctext = $('.c-content__header__breadcrumb .breadcrumb-item').eq(0).text().toLowerCase();
+                console.log("First bc text: ", bctext);
+                $('.menu-link').each((ml) => {
+                    const mltxt = ml.text();
+                    console.log("Menu link", mltxt);
+                    if (mltxt === bctext) {
+                        $('.current-menu-item').removeClass('current-menu-item')
+                        ml.addClass('current-menu-item');
+                        console.log("set as current");
+                    }
+                });
+            }, 300);
         }
+
+        window.onhashchange = updateMenu;
+        window.onload = updateMenu;
 
         //c-content__header__breadcrumb breadcrumb
     }
