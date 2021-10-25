@@ -24,8 +24,8 @@
                 const bctext = $('.c-content__header__breadcrumb .breadcrumb-item').eq(0).text().toLowerCase();
                 console.log("First bc text: ", bctext);
                 console.log("menu links", $('.main-header-menu .menu-item .menu-link'));
-                $('.main-header-menu .menu-item .menu-link').each((n, ml) => {
-                    const mltxt = ml.text().toLowerCase();
+                $('.main-header-menu .menu-item .menu-link').each(function(n) {
+                    const mltxt = $(this).text().toLowerCase();
                     console.log("Menu link", mltxt);
                     if (mltxt === bctext) {
                         $('.current-menu-item').removeClass('current-menu-item')
