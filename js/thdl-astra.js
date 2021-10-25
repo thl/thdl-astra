@@ -23,7 +23,7 @@
             setTimeout(() => {
                 const bctext = $('.c-content__header__breadcrumb .breadcrumb-item').eq(0).text().toLowerCase();
                 console.log("First bc text: ", bctext);
-                $('.menu-link').each((ml) => {
+                $('.main-header-menu .menu-item .menu-link').each((n, ml) => {
                     const mltxt = ml.text();
                     console.log("Menu link", mltxt);
                     if (mltxt === bctext) {
