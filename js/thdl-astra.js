@@ -27,9 +27,9 @@
                 $('.main-header-menu .menu-item .menu-link').each(function(n) {
                     const mltxt = $(this).text().toLowerCase();
                     console.log("Menu link", mltxt);
-                    if (mltxt === bctext) {
-                        $('.current-menu-item').removeClass('current-menu-item')
-                        ml.addClass('current-menu-item');
+                    if (mltxt == bctext) {
+                        $('.current-menu-item').removeClass('current-menu-item');
+                        $(this).addClass('current-menu-item');
                         console.log("set as current");
                     }
                 });
