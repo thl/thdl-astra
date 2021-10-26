@@ -130,8 +130,8 @@ aside.l-column__search header.treeNav-header {
     line-height: 40px;
     max-height: 40px;
   }
-  
-  .current-menu-item {
+
+  .current-menu-item, .current-menu-item a {
     background-color: $almost-white;
     color: $menubar-color;
   }

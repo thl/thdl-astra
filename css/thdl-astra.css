@@ -107,7 +107,7 @@ aside.l-column__search header.treeNav-header {
   line-height: 40px;
   max-height: 40px;
 }
-#site-navigation .main-navigation .current-menu-item {
+#site-navigation .main-navigation .current-menu-item, #site-navigation .main-navigation .current-menu-item a {
   background-color: #fdfdfd;
   color: #5a86ab;
 }
