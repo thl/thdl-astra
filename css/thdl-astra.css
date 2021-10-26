@@ -17,6 +17,30 @@
   padding: 0;
 }
 
+body.home:not(.mandala) .right-side {
+  margin-top: -40px;
+  margin-right: -8px;
+  z-index: 100;
+}
+body.home:not(.mandala) #masthead #basicSearchPortal {
+  margin-top: 3rem;
+}
+body.home:not(.mandala) #masthead #browseSearchPortal {
+  margin-top: 3.5rem;
+}
+
+body:not(.home) .right-side, body.mandala .right-side {
+  margin-top: -45px;
+  margin-right: -10px;
+  z-index: 100;
+}
+body:not(.home) #masthead #basicSearchPortal, body.mandala #masthead #basicSearchPortal {
+  margin-top: 3rem;
+}
+body:not(.home) #masthead #browseSearchPortal, body.mandala #masthead #browseSearchPortal {
+  margin-top: 3.5rem;
+}
+
 #secondary {
   display: none;
 }

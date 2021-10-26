@@ -22,6 +22,41 @@ $almost-white: #fdfdfd;
   }
 }
 
+body.home:not(.mandala) {
+  .right-side {
+    margin-top: -40px;
+    margin-right: -8px;
+    z-index: 100;
+  }
+
+  #masthead {
+    #basicSearchPortal {
+      margin-top: 3rem;
+    }
+
+    #browseSearchPortal {
+      margin-top: 3.5rem;
+    }
+  }
+}
+
+body:not(.home), body.mandala {
+  .right-side {
+    margin-top: -45px;
+    margin-right: -10px;
+    z-index: 100;
+  }
+  #masthead {
+    #basicSearchPortal {
+      margin-top: 3rem;
+    }
+
+    #browseSearchPortal {
+      margin-top: 3.5rem;
+    }
+  }
+}
+
 // Hide Secondary Flex Column
 #secondary {
   display: none;
