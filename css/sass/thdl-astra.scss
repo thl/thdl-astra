@@ -128,9 +128,9 @@ aside.l-column__search header.treeNav-header {
 #site-navigation .main-navigation {
   .current-menu-item {
     background-color: $almost-white;
-    a {
-      color: $menubar-color;
-    }
+    color: $menubar-color;
+    line-height: 40px;
+    max-height: 40px;
   }
 }
 

@@ -10,6 +10,7 @@
         // Resolve two selected menu items
 
         // Close drop down menus on click and select parent
+        /*
         $('.sub-menu .menu-link').on('click', function(e) {
             let parent_menu = $(this).parents('.sub-menu').eq(0).parent();
             $('.current-menu-item').removeClass('current-menu-item');
@@ -18,26 +19,36 @@
                 $('.menu-item.clicked').removeClass('clicked');
             }, 100);
         });
-
-        const updateMenu =  function(e) {
-            setTimeout(() => {
-                const bctext = $('.c-content__header__breadcrumb .breadcrumb-item').eq(0).text().toLowerCase();
-                console.log("First bc text: ", bctext);
-                console.log("menu links", $('.main-header-menu .menu-item .menu-link'));
-                $('.main-header-menu .menu-item .menu-link').each(function(n) {
-                    const mltxt = $(this).text().toLowerCase();
-                    console.log("Menu link", mltxt);
-                    if (mltxt == bctext) {
-                        $('.current-menu-item').removeClass('current-menu-item');
-                        $(this).addClass('current-menu-item');
-                        console.log("set as current");
-                    }
-                });
-            }, 300);
+        */
+        function findLink(lbl) {
+            let lnk = false;
+            $('.ast-below-header-bar .main-navigation .menu-item .menu-link').each(function(n) {
+                const mltxt = $(this).text().toLowerCase();
+                if (mltxt === lbl) {
+                    lnk = $(this);
+                }
+            });
+            return lnk;
         }
 
-        window.onhashchange = updateMenu;
-        window.onload = updateMenu;
+        const hashChange =  function(e) {
+            if (!window.thlhcto) {
+                window.thlhcto = setTimeout(() => {
+                    const hsh = window.location.hash;
+                    let typemtch = hsh.match(/(audio-video|collections|images|sources|texts|visuals)/);
+                    if (typemtch) {
+                        const atype = typemtch[0].toLowerCase();
+                        const actlink = findLink(atype);
+                        $('.current-menu-item').removeClass('current-menu-item');
+                        actlink.addClass('current-menu-item');
+                    }
+                    window.thlhcto = null;
+                }, 100);
+            }
+        }
+
+        window.onhashchange = hashChange;
+        window.onload = hashChange;
 
         //c-content__header__breadcrumb breadcrumb
     }
