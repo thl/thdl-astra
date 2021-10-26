@@ -23,10 +23,10 @@ body.home:not(.mandala) .right-side {
   z-index: 100;
 }
 body.home:not(.mandala) #masthead #basicSearchPortal {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 body.home:not(.mandala) #masthead #browseSearchPortal {
-  margin-top: 3.5rem;
+  margin-top: 4.5rem;
 }
 
 body:not(.home) .right-side, body.mandala .right-side {
