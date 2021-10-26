@@ -126,11 +126,14 @@ aside.l-column__search header.treeNav-header {
 
 // Nav menu (below header bar)
 #site-navigation .main-navigation {
+  .menu-item {
+    line-height: 40px;
+    max-height: 40px;
+  }
+  
   .current-menu-item {
     background-color: $almost-white;
     color: $menubar-color;
-    line-height: 40px;
-    max-height: 40px;
   }
 }
 

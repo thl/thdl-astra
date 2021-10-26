@@ -103,11 +103,13 @@ aside.l-column__search header.treeNav-header {
   height: 4.2rem;
 }
 
+#site-navigation .main-navigation .menu-item {
+  line-height: 40px;
+  max-height: 40px;
+}
 #site-navigation .main-navigation .current-menu-item {
   background-color: #fdfdfd;
   color: #5a86ab;
-  line-height: 40px;
-  max-height: 40px;
 }
 
 .ast-mobile-header-wrap .ast-below-header-bar,
