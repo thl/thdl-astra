@@ -11,6 +11,9 @@ $almost-white: #fdfdfd;
   }
   #primary {
     margin-bottom: 0 !important;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
   }
   #main {
     margin-top: -0.5rem;
@@ -19,6 +22,18 @@ $almost-white: #fdfdfd;
       min-height: 75vh;
       padding: 0;
     }
+  }
+}
+
+// Nav bar
+.thdl-content-top nav ul {
+  display: inline-block;
+  margin: 0 auto;
+  li {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: 0.2rem 1rem;
+    margin: 0 1rem;
   }
 }
 

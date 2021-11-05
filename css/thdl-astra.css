@@ -7,6 +7,9 @@
 }
 .ast-container #primary {
   margin-bottom: 0 !important;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 .ast-container #main {
   margin-top: -0.5rem;
@@ -15,6 +18,17 @@
   width: 100vw;
   min-height: 75vh;
   padding: 0;
+}
+
+.thdl-content-top nav ul {
+  display: inline-block;
+  margin: 0 auto;
+}
+.thdl-content-top nav ul li {
+  display: inline-block;
+  font-size: 1.25rem;
+  padding: 0.2rem 1rem;
+  margin: 0 1rem;
 }
 
 body.home:not(.mandala) .right-side {
