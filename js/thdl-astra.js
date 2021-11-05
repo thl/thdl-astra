@@ -7,6 +7,7 @@
     })
 
     function thdl_menu_fix() {
+        return;
         // Resolve two selected menu items
 
         // Close drop down menus on click and select parent
