@@ -17,17 +17,31 @@
                     const windowhash = window.location.hash.replace('#', '');
                     $('.current-menu-item').removeClass('current-menu-item');
                     $('.selected-menu-item').removeClass('selected-menu-item');
-                    $('#menu-primary-menu .menu-item').each(function() {
+                    let found = false;
+                    $('#menu-primary-menu > .menu-item').each(function() {
                         const linkhref = $(this).find('a').attr('href');
                         let linkhash = linkhref.split('#');
                         linkhash = (linkhash.length > 1) ? linkhash[1] : linkhash[0];
-
-                        console.log(`window hash: ${windowhash}; linkhash: ${linkhash}`);
                         if (linkhash == windowhash || windowhash.includes(linkhash)) {
-                            console.log("Foundi it");
+                            found = true;
+                            console.log(linkhash, windowhash);
                             $(this).addClass('selected-menu-item');
                         }
                     });
+
+                    const isAsset = windowhash.match(/^\/(audio-video|images|sources|texts|visuals).*/);
+
+                    if (!found && isAsset) {
+                        $('#menu-primary-menu > .menu-item').each(function() {
+                            const linkhref = $(this).find('a').attr('href');
+                            let linkhash = linkhref.split('#');
+                            linkhash = (linkhash.length > 1) ? linkhash[1] : linkhash[0];
+
+                            if (linkhash.includes('resources')) {
+                                $(this).addClass('selected-menu-item');
+                            }
+                        });
+                    }
                     window.thlhcto = null;
                 }, 50);
             }
