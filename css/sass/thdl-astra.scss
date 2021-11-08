@@ -26,15 +26,10 @@ $almost-white: #fdfdfd;
 }
 
 // Nav bar
-.thdl-content-top nav ul {
-  display: inline-block;
-  margin: 0 auto;
-  li {
-    display: inline-block;
-    font-size: 1.25rem;
-    padding: 0.2rem 1rem;
-    margin: 0 1rem;
-  }
+#thdl-content-top .widget_nav_menu {
+  height: 40px;
+  ul.menu li { display: inline-block;}
+
 }
 
 body.home:not(.mandala) {

@@ -30,15 +30,12 @@ get_header(); ?>
         <div id="thdl-col-1" class="thdl-col"></div>
 
         <div id="thdl-col-2" class="thdl-col">
-
 	        <?php if ( is_active_sidebar( 'content-top-widget-area' ) ) : ?>
                 <div id="thdl-content-top" class="widget-area">
 			        <?php dynamic_sidebar( 'content-top-widget-area' ); ?>
                 </div>
 	        <?php endif; ?>
-
             <div id="mandala-root"></div>
-
             <?php astra_primary_content_top(); ?>
 
             <?php astra_content_page_loop(); ?>

@@ -1,17 +1,16 @@
 (function($) {
 
     $(document).ready(() => {
-        thdl_menu_fix();
-        thdl_move_page_header();
-        thdl_position_mandala_root();
+        // Old fixes for previous version.
+        // thdl_menu_fix();
+        // thdl_move_page_header();
+        // thdl_position_mandala_root();
     })
 
     function thdl_menu_fix() {
-        return;
         // Resolve two selected menu items
 
         // Close drop down menus on click and select parent
-        /*
         $('.sub-menu .menu-link').on('click', function(e) {
             let parent_menu = $(this).parents('.sub-menu').eq(0).parent();
             $('.current-menu-item').removeClass('current-menu-item');
@@ -20,7 +19,7 @@
                 $('.menu-item.clicked').removeClass('clicked');
             }, 100);
         });
-        */
+
         function findLink(lbl) {
             let lnk = false;
             $('.ast-below-header-bar .main-navigation .menu-item .menu-link').each(function(n) {
@@ -70,4 +69,5 @@
             mroot.prependTo(leftside);
         }
     }
+
 })(jQuery);
