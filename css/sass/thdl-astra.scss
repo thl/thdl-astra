@@ -2,27 +2,12 @@ $menubar-color: #5a86ab;
 $menubar-height: 40px;
 $almost-white: #fdfdfd;
 
-// Container full width
-.ast-container {
-  max-width: unset;
-  padding:0;
-  #site-content {
-    width: 100%;
-  }
-  #primary {
-    margin-bottom: 0 !important;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-  }
-  #main {
-    margin-top: -0.5rem;
-    & > article {
-      width: 100vw;
-      min-height: 75vh;
-      padding: 0;
-    }
-  }
+
+#primary {
+  margin-bottom: 0 !important;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
 // Nav bar

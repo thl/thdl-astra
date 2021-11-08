@@ -1,23 +1,8 @@
-.ast-container {
-  max-width: unset;
-  padding: 0;
-}
-.ast-container #site-content {
-  width: 100%;
-}
-.ast-container #primary {
+#primary {
   margin-bottom: 0 !important;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-}
-.ast-container #main {
-  margin-top: -0.5rem;
-}
-.ast-container #main > article {
-  width: 100vw;
-  min-height: 75vh;
-  padding: 0;
 }
 
 #thdl-content-top .widget_nav_menu {
