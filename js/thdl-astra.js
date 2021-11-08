@@ -2,48 +2,34 @@
 
     $(document).ready(() => {
         // Old fixes for previous version.
-        // thdl_menu_fix();
+        thdl_menu_fix();
         // thdl_move_page_header();
         // thdl_position_mandala_root();
     })
 
     function thdl_menu_fix() {
         // Resolve two selected menu items
-
-        // Close drop down menus on click and select parent
-        $('.sub-menu .menu-link').on('click', function(e) {
-            let parent_menu = $(this).parents('.sub-menu').eq(0).parent();
-            $('.current-menu-item').removeClass('current-menu-item');
-            parent_menu.addClass('clicked current-menu-item');
-            setTimeout(() => {
-                $('.menu-item.clicked').removeClass('clicked');
-            }, 100);
-        });
-
-        function findLink(lbl) {
-            let lnk = false;
-            $('.ast-below-header-bar .main-navigation .menu-item .menu-link').each(function(n) {
-                const mltxt = $(this).text().toLowerCase();
-                if (mltxt === lbl) {
-                    lnk = $(this);
-                }
-            });
-            return lnk;
-        }
+        $('#menu-primary-menu .menu-item').removeClass(['current-menu-item', 'current_page_item', 'menu-item-home']);
 
         const hashChange =  function(e) {
             if (!window.thlhcto) {
                 window.thlhcto = setTimeout(() => {
-                    const hsh = window.location.hash;
-                    let typemtch = hsh.match(/(audio-video|collections|images|sources|texts|visuals)/);
-                    if (typemtch) {
-                        const atype = typemtch[0].toLowerCase();
-                        const actlink = findLink(atype);
-                        $('.current-menu-item').removeClass('current-menu-item');
-                        actlink.addClass('current-menu-item');
-                    }
+                    const windowhash = window.location.hash.replace('#', '');
+                    $('.current-menu-item').removeClass('current-menu-item');
+                    $('.selected-menu-item').removeClass('selected-menu-item');
+                    $('#menu-primary-menu .menu-item').each(function() {
+                        const linkhref = $(this).find('a').attr('href');
+                        let linkhash = linkhref.split('#');
+                        linkhash = (linkhash.length > 1) ? linkhash[1] : linkhash[0];
+
+                        console.log(`window hash: ${windowhash}; linkhash: ${linkhash}`);
+                        if (linkhash == windowhash || windowhash.includes(linkhash)) {
+                            console.log("Foundi it");
+                            $(this).addClass('selected-menu-item');
+                        }
+                    });
                     window.thlhcto = null;
-                }, 100);
+                }, 50);
             }
         }
 

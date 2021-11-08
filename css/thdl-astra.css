@@ -70,6 +70,12 @@
 #thdl-content-top nav ul li:hover > ul {
   display: inherit;
 }
+#thdl-content-top nav ul li.selected-menu-item {
+  background-color: #fdfdfd;
+}
+#thdl-content-top nav ul li.selected-menu-item a {
+  color: #5a86ab;
+}
 #thdl-content-top nav ul ul {
   display: none;
   position: absolute;
@@ -81,6 +87,14 @@
   float: none;
   display: list-item;
   position: relative;
+}
+#thdl-content-top nav ul ul li a {
+  color: #FFF !important;
+  background-color: #5a86ab;
+}
+#thdl-content-top nav ul ul li a:hover {
+  color: #5a86ab !important;
+  background-color: #FFF;
 }
 
 body.home:not(.mandala) .right-side {

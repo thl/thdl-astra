@@ -80,6 +80,13 @@ $almost-white: #fdfdfd;
         &:hover > ul {
           display: inherit;
         }
+
+        &.selected-menu-item {
+          background-color: $almost-white;
+          a {
+            color: $menubar-color;
+          }
+        }
       }
 
       /** submenus **/
@@ -94,6 +101,15 @@ $almost-white: #fdfdfd;
           float:none;
           display:list-item;
           position: relative;
+
+          a {
+            color:#FFF !important;
+            background-color: $menubar-color;
+            &:hover {
+              color:$menubar-color !important;
+              background-color: #FFF;
+            }
+          }
         }
 
       }
