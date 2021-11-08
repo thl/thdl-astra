@@ -1,33 +1,104 @@
 $menubar-color: #5a86ab;
 $menubar-height: 40px;
+$menubar-font-size: 1.5rem;
+$menu-zindex: 100;
 $almost-white: #fdfdfd;
 
+#content .ast-container {
+  display: block;
+  width: 100vw;
+  margin: 0;
+  max-width: unset;
+}
 
 #primary {
-  margin-bottom: 0 !important;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  column-count: 3;
+  width: 100%;
+  margin:0;
+  padding: 0;
+}
+
+.thdl-col {
+  height: 100vh;
+}
+
+#thdl-col-1 {
+  width: 0;
+}
+#thdl-col-2 {
+  width: 80vw;
+
+}
+
+#thdl-col-3 {
+  width: 20vw;
 }
 
 // Nav bar
-#thdl-content-top .widget_nav_menu {
-  height: 40px;
-  ul#menu-primary-menu {
-    margin: 0 auto;
-    width: 800px;
+#thdl-content-top {
 
-    li {
-      display: inline-block;
-      width: 12rem;
-      padding: 0 1rem;
+  nav {
+    height: $menubar-height;
+    width: 100%;
+    background-color: $menubar-color;
+    z-index: $menu-zindex;
 
-      a {
-        font-size: 1.6rem;
+    ul {
+      height: $menubar-height;
+      margin: 0 auto !important;
+      padding: 0;
+      list-style: none;
+      position: relative;
+      max-width: 650px;
+      z-index: $menu-zindex;
+
+      li {
+        height: $menubar-height;
+        line-height: $menubar-height;
+        display:inline-block;
+        background-color: $menubar-color;
+        font-size: $menubar-font-size;
+
+        a {
+          height: $menubar-height;
+          line-height: $menubar-height;
+          display:block;
+          padding:0 10px;
+          color:#FFF;
+          font-size: $menubar-font-size;
+          text-decoration:none;
+
+          &:hover {
+            background-color: $almost-white;
+            color: $menubar-color;
+          }
+        }
+
+        &:hover > ul {
+          display: inherit;
+        }
+      }
+
+      /** submenus **/
+      ul {
+        display: none;
+        position: absolute;
+
+        li {
+          height: $menubar-height;
+          line-height: $menubar-height;
+          width:170px;
+          float:none;
+          display:list-item;
+          position: relative;
+        }
+
       }
     }
   }
-
 }
 
 body.home:not(.mandala) {
