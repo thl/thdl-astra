@@ -28,7 +28,20 @@ $almost-white: #fdfdfd;
 // Nav bar
 #thdl-content-top .widget_nav_menu {
   height: 40px;
-  ul.menu li { display: inline-block;}
+  ul#menu-primary-menu {
+    margin: 0 auto;
+    width: 800px;
+
+    li {
+      display: inline-block;
+      width: 12rem;
+      padding: 0 1rem;
+
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
 
 }
 

@@ -23,8 +23,17 @@
 #thdl-content-top .widget_nav_menu {
   height: 40px;
 }
-#thdl-content-top .widget_nav_menu ul.menu li {
+#thdl-content-top .widget_nav_menu ul#menu-primary-menu {
+  margin: 0 auto;
+  width: 800px;
+}
+#thdl-content-top .widget_nav_menu ul#menu-primary-menu li {
   display: inline-block;
+  width: 12rem;
+  padding: 0 1rem;
+}
+#thdl-content-top .widget_nav_menu ul#menu-primary-menu li a {
+  font-size: 1.6rem;
 }
 
 body.home:not(.mandala) .right-side {
