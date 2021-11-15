@@ -4,6 +4,9 @@
   padding:0;
   max-width: unset;
 }
+body.mandala .site-content .ast-container {
+  display: unset;
+}
 
 #primary {
   display: flex;
@@ -32,7 +35,7 @@
 }
 
 
-
+/*
 #thdl-content-top nav {
   height: 40px;
   width: 100%;
@@ -47,7 +50,6 @@
   position: relative;
   max-width: 650px;
   z-index: 100;
-  /** submenus **/
 }
 #thdl-content-top nav ul li {
   height: 40px;
@@ -98,9 +100,9 @@
   color: #5a86ab !important;
   background-color: #FFF;
 }
+*/
 
-
-
+/*
 body.home:not(.mandala) .right-side {
   margin-top: 0;
   margin-right: 0;
@@ -114,9 +116,9 @@ body.home:not(.mandala) #masthead #browseSearchPortal {
 }
 
 body:not(.home) .right-side, body.mandala .right-side {
- /* margin-top: -45px;
+  margin-top: -45px;
   margin-right: -10px;
-  z-index: 100;*/
+  z-index: 100;
 }
 body:not(.home) #masthead #basicSearchPortal, body.mandala #masthead #basicSearchPortal {
   margin-top: 0;
@@ -129,7 +131,6 @@ body:not(.home) #masthead #browseSearchPortal, body.mandala #masthead #browseSea
   display: none;
 }
 
-/*
 .wp-block-column.left-main {
   flex-basis: 75%;
   padding: 1.5rem 2.5rem;
@@ -161,18 +162,21 @@ body:not(.home) #masthead #browseSearchPortal, body.mandala #masthead #browseSea
     margin: 0 auto;*/
   }
 }
+
+
+
 .page .entry-header, .page .entry-content {
   margin: 0 auto;
-  /*max-width: 1900px;*/
 }
 .page .entry-header a, .page .entry-content a {
   text-decoration: none;
 }
 
+
+/*
 #ast-desktop-header {
   background-color: white;
 }
-
 .site-header-primary-section-left.site-header-section {
   display: flex;
   width: 100vw;
@@ -211,12 +215,16 @@ span.icon.shanticon-magnify {
 aside.l-column__search header.treeNav-header {
   height: 4.2rem;
 }
+*/
 
+
+/*
 #site-navigation .main-navigation .menu-item {
   line-height: 40px;
   max-height: 40px;
 }
-#site-navigation .main-navigation .current-menu-item, #site-navigation .main-navigation .current-menu-item a {
+#site-navigation .main-navigation .current-menu-item,
+#site-navigation .main-navigation .current-menu-item a {
   background-color: #fdfdfd;
   color: #5a86ab;
 }
@@ -261,6 +269,9 @@ aside.l-column__search header.treeNav-header {
 body.home header.entry-header {
   display: none;
 }
+*/
+
+
 
 body.home:not(.mandala) #content article.page {
   background-color: #354f6480;
@@ -302,7 +313,6 @@ body.home:not(.mandala) #content article.page p {
 .l-content__rightsidebar {
   margin:0;
 }
-
 .l-content__rightsidebar .l-column__search a {
   text-decoration: none;
   border: none;
@@ -313,9 +323,8 @@ body.home:not(.mandala) #content article.page p {
   display: inline-block;
 }
 
-body.mandala .site-content .ast-container {
-  display: unset;
-}
+
+
 
 body.mandala div#mandala-root ~ div {
   display: none;
