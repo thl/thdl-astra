@@ -28,7 +28,7 @@
 }
 
 #thdl-col-3 {
-  width: 0;
+  width: auto;
 }
 
 
@@ -297,6 +297,10 @@ body.home:not(.mandala) #content article.page h5 {
 }
 body.home:not(.mandala) #content article.page p {
   font-size: 2rem;
+}
+
+.l-content__rightsidebar {
+  margin:0;
 }
 
 .l-content__rightsidebar .l-column__search a {
