@@ -443,14 +443,32 @@ div#text-alt-viewer {
 
 
 
+site-primary-header-wrap {
+padding:0;
+}
+
+.site-header-primary-section-right {
+  display:none;
+}
+
+.ast-builder-grid-row > .site-header-section {
+  justify-content: space-between;
+}
+
 .ast-logo-title-inline .ast-site-identity {
   padding:0;
 }
+.site-header-section>div:first-child {
+  padding-left:2rem;
+}
+
 
 .ast-mobile-header-wrap .ast-primary-header-bar,
 .ast-primary-header-bar .site-primary-header-wrap {
-  min-height: 5rem;
+  min-height: 5.5rem;
 }
+
+
 
 @media (min-width: 922px) {
   .ast-container {
