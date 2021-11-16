@@ -173,7 +173,7 @@ body:not(.home) #masthead #browseSearchPortal, body.mandala #masthead #browseSea
 }
 
 
-/*
+
 #ast-desktop-header {
   background-color: white;
 }
@@ -215,10 +215,10 @@ span.icon.shanticon-magnify {
 aside.l-column__search header.treeNav-header {
   height: 4.2rem;
 }
-*/
 
 
-/*
+
+
 #site-navigation .main-navigation .menu-item {
   line-height: 40px;
   max-height: 40px;
@@ -269,7 +269,7 @@ aside.l-column__search header.treeNav-header {
 body.home header.entry-header {
   display: none;
 }
-*/
+
 
 
 
@@ -343,7 +343,7 @@ body.mandala div#mandala-root ~ div {
 
 
 
-/*
+
 .teaser-columns:first-child .thl-teaser {
   margin-left: auto;
 }
@@ -383,11 +383,11 @@ body.mandala div#mandala-root ~ div {
     }
   }
 }
-*/
 
 
 
-/*
+
+
 body.blog #primary {
   width: 100%;
 }
@@ -407,7 +407,7 @@ body.blog .left-main article.post {
 body.blog .right-side {
   margin-left: 0;
 }
-*/
+
 
 
 body.feature-page:not(.mandala) .wp-block-column.left-main {
@@ -439,10 +439,11 @@ div#text-alt-viewer {
 /*# sourceMappingURL=thdl-astra.css.map */
 
 
-
-
+.ast-builder-grid-row {
+  display:block;
+}
 site-primary-header-wrap {
-padding:0;
+  padding:0;
 }
 .site-header-primary-section-right {
   display:none;
@@ -457,9 +458,21 @@ padding:0;
 .ast-primary-header-bar .site-primary-header-wrap {
   min-height: 5.5rem;
 }
-.site-header-primary-section-left.site-header-section {
-  justify-content: space-between;
+
+.mandala.all,
+.mandala.c-content__header__main,
+.mandala.collections,
+.u-icon__audio.color-invert,
+.u-icon__collections.color-invert {
+  background-color:transparent;
+  color:#222;
 }
+
+
+
+
+
+
 
 @media (min-width: 922px) {
   .ast-container {
