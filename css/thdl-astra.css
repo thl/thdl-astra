@@ -35,7 +35,7 @@ body.mandala .site-content .ast-container {
 }
 
 
-/*
+
 #thdl-content-top nav {
   height: 40px;
   width: 100%;
@@ -100,7 +100,7 @@ body.mandala .site-content .ast-container {
   color: #5a86ab !important;
   background-color: #FFF;
 }
-*/
+
 
 /*
 body.home:not(.mandala) .right-side {
@@ -131,6 +131,7 @@ body:not(.home) #masthead #browseSearchPortal, body.mandala #masthead #browseSea
   display: none;
 }
 
+
 .wp-block-column.left-main {
   flex-basis: 75%;
   padding: 1.5rem 2.5rem;
@@ -140,6 +141,8 @@ body:not(.home) #masthead #browseSearchPortal, body.mandala #masthead #browseSea
   padding-top: 5rem;
 }
 */
+
+
 
 @media (min-width: 1900px) {
   .ast-main-header-wrap.main-header-bar-wrap {
