@@ -181,8 +181,8 @@ body:not(.home) #masthead #browseSearchPortal, body.mandala #masthead #browseSea
   background-color: white;
 }
 .site-header-primary-section-left.site-header-section {
-  display: flex;
-  width: 100vw;
+  /*display: flex;
+  width: 100vw;*/
   justify-content: space-between;
 }
 
@@ -246,7 +246,7 @@ aside.l-column__search header.treeNav-header {
 }
 .ast-below-header-bar .ast-nav-menu li {
   min-width: 175px;
-  max-height: 40px;
+  max-height: 55px;
   text-align: center;
 }
 .ast-below-header-bar .ast-nav-menu li a {
@@ -460,6 +460,7 @@ site-primary-header-wrap {
 .ast-mobile-header-wrap .ast-primary-header-bar,
 .ast-primary-header-bar .site-primary-header-wrap {
   min-height: 5.5rem;
+  padding:0;
 }
 
 .mandala.all,
@@ -470,15 +471,19 @@ site-primary-header-wrap {
   background-color:transparent;
   border:none;
 }
-.c-content__header__breadcrumb,
+body .c-content__header__breadcrumb,
 .c-content__header__breadcrumb .breadcrumb-item {
   color:#222;
 }
-.l-content__main {
+body .l-content__main {
   margin: 0 1.25rem 0 2rem;
 }
 
-
+.ast-masthead-custom-menu-items, .ast-masthead-custom-menu-items * {
+  font-size: 9px;
+  font-size: 0.6rem;
+  line-height: 1.98;
+}
 
 
 @media (min-width: 922px) {
