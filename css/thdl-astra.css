@@ -1,3 +1,9 @@
+
+/* ------------
+  Page Layout
+ ------------- */
+*/
+ */
 #content .ast-container {
   width: 100vw;
   margin: 0;
@@ -17,7 +23,25 @@ body.mandala .site-content .ast-container {
   margin: 0;
   padding: 0;
 }
+.ast-separate-container #primary {
+  margin-top: 0 !important;
+}
 
+
+
+/* -------------------------------
+  Page Layout : Mandala Content
+ ------------------------------- */
+body.mandala div#mandala-root ~ div {
+  display: none;
+}
+
+
+
+
+/* ----------------------------
+  Page Layout: Content Columns
+ ---------------------------- */
 .thdl-col {
   height: 100vh;
 }
@@ -36,11 +60,14 @@ body.mandala .site-content .ast-container {
 
 
 
+
+
+/* ------------
+  Main Top Nav
+ ------------- */
 #thdl-content-top nav {
-  height: 40px;
-  width: 100%;
+  display: flex;
   background-color: #5a86ab;
-  z-index: 100;
 }
 #thdl-content-top nav ul {
   height: 40px;
@@ -221,7 +248,9 @@ aside.l-column__search header.treeNav-header {
 
 
 
-
+/* --------------------------
+  Site Banner Search Buttons
+ --------------------------- */
 #site-navigation .main-navigation .menu-item {
   line-height: 40px;
   max-height: 40px;
@@ -269,6 +298,14 @@ aside.l-column__search header.treeNav-header {
   display: none;
 }
 
+
+
+
+
+/* ------------
+  Home Page
+ ------------- */
+
 body.home header.entry-header {
   display: none;
 }
@@ -313,6 +350,18 @@ body.home:not(.mandala) #content article.page p {
   font-size: 2rem;
 }
 
+
+
+
+
+
+
+
+
+
+/* ------------
+  Search Column
+ ------------- */
 .l-content__rightsidebar {
   margin:0;
 }
@@ -329,13 +378,7 @@ body.home:not(.mandala) #content article.page p {
 
 
 
-body.mandala div#mandala-root ~ div {
-  display: none;
-}
 
-.ast-separate-container #primary {
-  margin-top: 0 !important;
-}
 
 .ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single {
   padding: 1rem 2rem;
@@ -346,12 +389,13 @@ body.mandala div#mandala-root ~ div {
 
 
 
-
+/* ------------
+  THL Teasers
+ ------------- */
 .teaser-columns:first-child .thl-teaser {
   margin-left: auto;
 }
 
-// THL Teasers
 .wp-block-group.thl-teaser {
   border: 4px double #777;
   margin-bottom: 2rem;
@@ -390,7 +434,9 @@ body.mandala div#mandala-root ~ div {
 
 
 
-
+/* ------------
+  Fun w/Blogs
+ ------------- */
 body.blog #primary {
   width: 100%;
 }
@@ -439,7 +485,9 @@ div#text-alt-viewer {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=thdl-astra.css.map */
+
+
+
 
 
 .ast-builder-grid-row {
@@ -460,6 +508,7 @@ site-primary-header-wrap {
 .ast-mobile-header-wrap .ast-primary-header-bar,
 .ast-primary-header-bar .site-primary-header-wrap {
   min-height: 5.5rem;
+  padding:0;
 }
 
 .mandala.all,
@@ -472,7 +521,7 @@ site-primary-header-wrap {
 }
 .c-content__header__breadcrumb,
 .c-content__header__breadcrumb .breadcrumb-item {
-  color:#222;
+  color:#222 !important;
 }
 .l-content__main {
   margin: 0 1.25rem 0 2rem;
@@ -486,3 +535,20 @@ site-primary-header-wrap {
     max-width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=thdl-astra.css.map */
+
