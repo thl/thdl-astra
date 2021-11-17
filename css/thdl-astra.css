@@ -166,7 +166,10 @@ body:not(.home) #masthead #browseSearchPortal, body.mandala #masthead #browseSea
   }
 }
 
-
+.main-header-bar {
+  line-height: 3.51;
+   height: 4.7rem;
+}
 
 .page .entry-header, .page .entry-content {
   margin: 0 auto;
@@ -471,11 +474,11 @@ site-primary-header-wrap {
   background-color:transparent;
   border:none;
 }
-body .c-content__header__breadcrumb,
+.c-content__header__breadcrumb,
 .c-content__header__breadcrumb .breadcrumb-item {
-  color:#222;
+  color:#222 !important;
 }
-body .l-content__main {
+.l-content__main {
   margin: 0 1.25rem 0 2rem;
 }
 
@@ -484,6 +487,24 @@ body .l-content__main {
   font-size: 0.6rem;
   line-height: 1.98;
 }
+
+.sui-search1 input.sui-search2 {
+  margin-top:1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 922px) {
