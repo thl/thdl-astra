@@ -35,7 +35,7 @@ body.mandala div#mandala-root ~ div {
 }
 
 .card-body .icon:before {
-  padding-right:0;
+  padding-right:0 !important;
 }
 
 
@@ -98,8 +98,8 @@ site-primary-header-wrap {
 
 /* BREADCRUMBS ROW */
 .c-content__header__main {
-  border:none;
-  padding:.5rem 0 0;
+  border:none !important;
+  padding:.5rem 0 0 !important;
 }
 .c-content__header__breadcrumb,
 .c-content__header__breadcrumb .breadcrumb-item {
