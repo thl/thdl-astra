@@ -32,7 +32,6 @@ $almost-white: #fdfdfd;
   width: 80vw;
 
 }
-
 #thdl-col-3 {
   width: 20vw;
 }
@@ -230,8 +229,9 @@ span.icon.shanticon-magnify {
   color: lightgrey;
 }
 
-#main-search-tree-toggle, #advanced-search-tree-toggle {
-  max-height: 40px;
+#main-search-tree-toggle,
+#advanced-search-tree-toggle {
+  max-height: 4.5;
 
   .icon {
     font-size: 2.2rem;
@@ -240,6 +240,11 @@ span.icon.shanticon-magnify {
     font-size: 2.0rem;
     top: 0;
   }
+}
+
+.ast-mobile-header-wrap .ast-primary-header-bar,
+.ast-primary-header-bar .site-primary-header-wrap {
+  min-height: 4.5rem;
 }
 
 #browseSearchPortal .adv-settings-btn {
@@ -496,4 +501,14 @@ div#text-alt-viewer {
 // General Text Styles
 .bo {
   text-decoration: none;
+}
+
+
+
+
+
+
+
+.ast-logo-title-inline .site-logo-img {
+  margin-right:.5rem;
 }
