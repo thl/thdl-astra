@@ -231,20 +231,37 @@ span.icon.shanticon-magnify {
 
 #main-search-tree-toggle,
 #advanced-search-tree-toggle {
-  max-height: 4.5;
+  max-height: 4.6;
 
   .icon {
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
   }
   svg {
-    font-size: 2.0rem;
-    top: 0;
+    font-size: 2.3rem;
+    top: 0.2rem;
+    color: #222;
   }
+}
+
+.c-MainSearchToggle--group label svg:focus,
+.c-MainSearchToggle--group label svg:active {
+  color:#fff;
+}
+
+.c-MainSearchToggle--group .siteSettings-Toggle--button {
+  background-color: #fff;
+  padding: .8rem 0;
+  width: 6.5rem;
+  height: 4.6rem;
+  color: #000;
+  border-color: transparent #ddd !important;
+  opacity: 1;
+  transition: all .35s;
 }
 
 .ast-mobile-header-wrap .ast-primary-header-bar,
 .ast-primary-header-bar .site-primary-header-wrap {
-  min-height: 4.5rem;
+  min-height: 4.6rem;
 }
 
 #browseSearchPortal .adv-settings-btn {
