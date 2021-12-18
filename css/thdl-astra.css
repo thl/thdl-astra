@@ -297,8 +297,8 @@ span.icon.shanticon-magnify {
   font-size: 2.8rem;
 }
 #main-search-tree-toggle svg, #advanced-search-tree-toggle svg {
-  font-size: 2rem;
-  top: 0;
+  font-size: 2.5rem;
+  top: 0.2rem;
 }
 
 #browseSearchPortal .adv-settings-btn {
@@ -556,9 +556,20 @@ div#text-alt-viewer {
 
 
 
-
-
-
+.siteSettings-Toggle--button {
+  height: 4.5rem;
+  width: 5.25rem;
+  background-color: #fff;
+  border-color: #fff;
+}
+.siteSettings-Toggle--button svg {
+  font-size: 2.5rem;
+  color: #000;
+}
+.siteSettings-Toggle--button:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
 
 
 
