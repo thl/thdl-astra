@@ -291,7 +291,7 @@ span.icon.shanticon-magnify {
 }
 
 #main-search-tree-toggle, #advanced-search-tree-toggle {
-  max-height: 40px;
+  max-height: 4.6rem;
 }
 #main-search-tree-toggle .icon, #advanced-search-tree-toggle .icon {
   font-size: 2.2rem;
@@ -319,8 +319,8 @@ aside.l-column__search header.treeNav-header {
   Site Banner Search Buttons
  --------------------------- */
 #site-navigation .main-navigation .menu-item {
-  line-height: 40px;
-  max-height: 40px;
+  line-height: 4.6rem;
+  max-height: 4.6rem;
 }
 #site-navigation .main-navigation .current-menu-item,
 #site-navigation .main-navigation .current-menu-item a {
@@ -330,8 +330,8 @@ aside.l-column__search header.treeNav-header {
 
 .ast-mobile-header-wrap .ast-below-header-bar,
 .ast-below-header-bar .site-below-header-wrap {
-  min-height: 40px;
-  max-height: 40px;
+  min-height: 4.6rem;
+  max-height: 4.6rem;
 }
 
 .ast-below-header-bar {
@@ -342,7 +342,7 @@ aside.l-column__search header.treeNav-header {
 }
 .ast-below-header-bar .ast-nav-menu li {
   min-width: 175px;
-  max-height: 40px;
+  max-height: 4.6rem;
   text-align: center;
 }
 .ast-below-header-bar .ast-nav-menu li a {
