@@ -436,23 +436,10 @@ body.home:not(.mandala) #content article.page p {
   text-decoration: none;
   border: none;
 }
-.l-content__rightsidebar .l-column__search .header-label-count a {
-  color: white;
-  margin-top: 3px;
-  display: inline-block;
-}
-
-
-
-
-
 
 .ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single {
   padding: 1rem 2rem;
 }
-
-
-
 
 
 
